@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My To Do List</title>
+        <link type="text/css" rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div id="myDIV" class="header">
+              <h2>My To Do List</h2>
+              <input type="text" id="myInput" placeholder="Title...">
+              <span class="addBtn" id="btn" onclick="newItem()">Add Item</span>
+               <div class="info">
+                
+                 <p>Click on an item to mark it as completed</p>
+                 <p>Click the "x" to remove an item</p>
+              </div>
+            </div>
+             
+            
+            <ul id="myUL">
+              <li>Hit the gym</li>
+              <li class="checked">Pay bills</li>
+              <li>Mow the lawn</li>
+              <li>Learn something new</li>
+              <li>Read a book</li>
+              <li>Meditate</li>
+            </ul>
+            </div>
+            <script src="todoapp.js"></script>
+    </body>
+</html>
