@@ -17,7 +17,6 @@ nodeList.forEach(node => {
   node.appendChild(span);
 });
 
-
 // Click on a close button to hide the current list item
 const close = document.querySelectorAll('.close');
 close.forEach(closeBtn => {
