@@ -23,7 +23,7 @@ close.forEach(closeBtn => {
   closeBtn.addEventListener('click', function() {
     const div = this.parentNode; //Explicitly binding this to the container div
     div.style.display = "none";
-  });
+  }, false);
 });
 
 // Add a "checked" symbol when clicking on a list item
