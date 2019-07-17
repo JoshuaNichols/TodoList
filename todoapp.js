@@ -59,3 +59,7 @@ function newItem() {
     }, false);
   });
 }
+
+//Event listener for the "Add" button
+const addButton = document.getElementById('addBtn');
+addButton.addEventListener('click', newItem);
