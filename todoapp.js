@@ -1,6 +1,6 @@
 /*****************************************/
 /*  Author: Joshua Nichols               *
-/*  Date: July 7, 2019                   *
+/*  Date: July 15, 2019                   *
 /*  Description:                         *
 /*            A todo list that           *
 /*    I replicated from W3schools.com    *
