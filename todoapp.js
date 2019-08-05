@@ -8,7 +8,7 @@
 
 
 // Create a "close" button and append it to each list item
-const nodeList = document.querySelectorAll('LI');
+let nodeList = document.querySelectorAll('LI');
 nodeList.forEach(node => {
   const span = document.createElement('span');
   const txt = document.createTextNode('\u00D7');
@@ -18,7 +18,7 @@ nodeList.forEach(node => {
 });
 
 // Click on a close button to hide the current list item
-const close = document.querySelectorAll('.close');
+let close = document.querySelectorAll('.close');
 close.forEach(closeBtn => {
   closeBtn.addEventListener('click', function() {
     const div = this.parentNode; //Explicitly binding this to the container div
@@ -27,7 +27,7 @@ close.forEach(closeBtn => {
 });
 
 // Add a "checked" symbol when clicking on a list item
-let list = document.querySelector('ul');
+const list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
@@ -50,11 +50,11 @@ function newItem() {
   span.className = 'close';
   span.appendChild(txt);
   li.appendChild(span);
-  const close = document.querySelectorAll('.close');
+  let close = document.querySelectorAll('.close');
   
   close.forEach(closeBtn => {  //A close button for each new list item
     closeBtn.addEventListener('click', function() {
-      const div = this.parentNode;
+      let div = this.parentNode;
       div.style.display = 'none';
     }, false);
   });
