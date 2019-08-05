@@ -21,7 +21,7 @@ nodeList.forEach(node => {
 let close = document.querySelectorAll('.close');
 close.forEach(closeBtn => {
   closeBtn.addEventListener('click', function() {
-    const div = this.parentNode; //Explicitly binding this to the container div
+    let div = this.parentNode; //Explicitly binding this to the container div
     div.style.display = "none";
   }, false);
 });
