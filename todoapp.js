@@ -50,7 +50,7 @@ function newItem() {
   span.className = 'close';
   span.appendChild(txt);
   li.appendChild(span);
-  let close = document.querySelectorAll('.close');
+  
   
   close.forEach(closeBtn => {  //A close button for each new list item
     closeBtn.addEventListener('click', function() {
